@@ -23,3 +23,15 @@ Content-Type: application/json
 {
     "prompt": "A Man Without Love, music"
 }
+
+###
+
+# @name generate-ai-completition
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoID": "37086427-d883-48ab-957b-f8804d302a6a",
+    "temperature": 0.5,
+    "template": "Gere um resumo sucinto da transcricao a seguir: '''{transcription}'''"
+}
